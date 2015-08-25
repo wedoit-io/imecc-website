@@ -1,0 +1,671 @@
+@import "iconfont.css";
+@import "animate.min.css";
+@import "_mixin";
+
+/*-----------------------------------------------------------------------------------*/
+/* GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    color: #3a3a3a;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.lead {
+    font-weight: 300;
+}
+
+button {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.428571429;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.animated {
+    visibility: visible !important;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  KEY COLOR
+/*-----------------------------------------------------------------------------------*/
+
+/*---- Typography ----*/
+
+header h1,
+.payoff h1,
+.details .carousel,
+.social a:hover {
+    color: #1AC2D8;
+}
+
+.features p {
+    color: #fff;
+}
+
+/*---- Background ----*/
+
+.features {
+    background: #1AC2D8;
+}
+
+.bgcyan {
+    background: #1AC2D8;
+}
+
+.bggrey {
+    background: #ccc;
+}
+
+.contatti {
+    background: #e8e8e8;
+    overflow: hidden;
+    padding: 50px 0px 50px 0px;
+    color: black;
+    .logo {
+        text-align: center;
+        img {
+            width: 200px;
+        }
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* NAVBAR
+/*-----------------------------------------------------------------------------------*/
+
+nav.navbar {
+    position: fixed;
+    top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    border-radius: 0px;
+    transition: all 0.2s;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+nav.navbar.fixed-to-top {
+    top: 0px;
+}
+
+.navbar-default {
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    display: block;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #aaa;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #3A3A3A;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar-default .navbar-brand {
+    color: #333333;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER 
+/*-----------------------------------------------------------------------------------*/
+
+header {
+    padding: 150px 0px 0px 0px;
+    height: 960px;
+    background: url("../img/gear.jpg");
+    background-color: white !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header p.lead {
+    font-size: 36px;
+}
+
+header .carousel-iphone {
+    margin-right: auto;
+    margin-left: auto;
+    width: 474px;
+    height: 672px;
+    background: url("../img/ipad-front.png") no-repeat;
+    background-size: 100%;
+}
+
+header .carousel {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 58px 0px 0px 0px;
+    width: 418px;
+}
+
+header .carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background: #444444;
+}
+
+header .carousel-indicators {
+    bottom: -53px;
+}
+
+header .carousel-indicators li {
+    display: inline-block;
+    margin: 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* PURCHASE
+/*-----------------------------------------------------------------------------------*/
+
+.purchase {
+    overflow: hidden;
+    padding: 100px 0px 100px 0px;
+    min-height: 200px;
+}
+
+.purchase a.app-store {
+    display: block;
+    width: 152px;
+    height: 52px;
+    background: url(../img/badge-appstore.png) #3a3a3a no-repeat 0px 5px;
+    color: white;
+    margin: 0 auto;
+    @include border-radius(4px);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  PAYOFF
+/*-----------------------------------------------------------------------------------*/
+
+.payoff {
+    overflow: hidden;
+    padding: 150px 0px 150px 0px;
+    //min-height: 600px;
+    background: url("../img/dunes.jpg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: white;
+}
+
+.payoff h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.8em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  DETAIL
+/*-----------------------------------------------------------------------------------*/
+
+.detail {
+    overflow: hidden;
+    padding: 30px 0px 0px 0px;
+    min-height: 500px;
+}
+
+.detail .title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.detail .features .row {
+    margin-bottom: 40px;
+}
+
+.detail .carousel h1 {
+    font-size: 3.8em;
+}
+
+.detail .carousel h1, .detail p {
+    text-align: left;
+    font-weight: 300;
+}
+
+.detail p {
+    color: #000;
+}
+
+.detail .carousel-control {
+    background: none;
+}
+
+.detail .app-screenshot {
+    overflow: hidden;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 52px;
+    width: 420px;
+    height: 450px;
+    background: url("../img/ipad-front.png") no-repeat;
+    background-size: 100%;
+}
+
+.detail .app-screenshot img {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    width: 370px;
+}
+
+.detail .carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 5px;
+    padding-bottom: 8px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.detail .carousel-indicators .active {
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+}
+
+.detail .carousel-indicators li {
+    display: inline-block;
+    margin: 1px;
+    //width: 45px;
+    //height: 5px;
+    border: none;
+    border-radius: 0px;
+    background: #eeeeee;
+    //text-indent: -999px;
+    cursor: pointer;
+}
+
+.detail .carousel-indicators.custom {
+    list-style-type: none;
+    padding-bottom: 30px;
+    li {
+        background-color: inherit;
+        text-indent: inherit;
+        display: inline-block;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: auto;
+        height: inherit;
+        padding: 0 10px;
+        &.active {
+            color: #1AC2D8;
+        }
+        &:hover {
+            color: #1AC2D8;
+        }
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  FEATURES
+/*-----------------------------------------------------------------------------------*/
+
+.features {
+    overflow: hidden;
+    padding: 50px 0px 50px 0px;
+    min-height: 400px;
+    color: black;
+}
+
+.features p {
+    font-weight: 400;
+}
+
+.features h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.features .circle {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 33px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: -10px;
+    }
+}
+
+.features span.glyphicon, .features i {
+    margin-top: 3px;
+    color: #ffffff;
+    font-size: 5em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  SOCIAL
+/*-----------------------------------------------------------------------------------*/
+
+.social {
+    overflow: hidden;
+    padding: 50px 0px 50px 0px;
+    //min-height: 350px;
+    background: url("../img/sea.jpg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: white;
+}
+
+.social h2 {
+    color: white;
+}
+
+.social a {
+    margin-left: 10px;
+    color: #FFF;
+    font-size: 5em;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  GET-IT
+/*-----------------------------------------------------------------------------------*/
+
+.get-it {
+    padding: 50px 0px 160px 0px;
+    text-align: center;
+}
+
+.get-it a.app-store {
+    display: block;
+    width: 152px;
+    height: 52px;
+    background: url(../img/badge-appstore.png) #3a3a3a no-repeat 0px 5px;
+    color: white;
+    margin: 0 auto;
+    @include border-radius(4px);
+}
+
+.get-it hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.get-it ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.get-it ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.get-it ul li:first-child {
+    margin-left: 0px;
+}
+
+.get-it ul li a {
+    color: #aaa;
+    font-size: 1.2em;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.get-it ul li a:hover {
+    color: #3A3A3A;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 50px;
+        min-height: 1000px;
+        height: 100%;
+    }
+    .navbar-nav {
+        float: left;
+        text-align: left;
+    }
+}
+
+@media (max-width: 992px) {
+    .detail .carousel h1, .detail p {
+        text-align: center;
+    }
+    .detail p {
+        margin-bottom: 60px;
+    }
+    header, .social {
+        background-position-y: 0px;
+        background-size: 200%;
+    }
+    .payoff {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 200px;
+    }
+    .payoff h1 {
+        font-size: 24px;
+    }
+    .features .col-md-4 {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .carousel-iphone, .detail .app-screenshot {
+        width: 280px;
+    }
+    header .carousel, .detail .app-screenshot img {
+        padding-top: 35px;
+        width: 246px;
+    }
+    header .carousel-indicators {
+        bottom: -40px;
+    }
+    .detail .app-screenshot img {
+        margin-top: -12px;
+        padding-top: 0px;
+    }
+    header {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    header h1 {
+        font-size: 70px;
+    }
+    .purchase {
+        padding-top: 50px;
+    }
+    .features col-md-4 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    /* Retina-specific stuff here */
+    .purchasebutton.app-store, .get-it button.app-store {
+        background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
+        background-size: 98%;
+        color: white;
+    }
+}
+
+/* CUSTOM */
+.navbar-brand {
+    padding: 0px 15px;
+    @include clearfix;
+    .appName {
+        display: block;
+        float: left;
+        padding-left: 10px;
+        padding-top: 22px;
+    }
+    .logo {
+        display: block;
+        float: left;
+        height: 50px;
+    }
+}
+
+.clienti {
+    padding: 30px 0;
+    h1 {
+        margin: 0;
+        color: #fff;
+    }
+}
+
+.clientiLista {
+    padding: 30px 0  60px;
+}
+
+.price {
+    padding: 60px 0;
+    h1 {
+        margin: 0;
+        color: #fff;
+    }
+    h3 {
+        margin: 30px 0 0;
+        color: #fff;
+    }
+    .pricehead {
+        margin-bottom: 15px;
+    }
+}
+
+.priceTable {
+    padding: 40px 0 60px;
+    h2 {
+        margin: 0;
+    }
+    table {
+        margin-top: 30px;
+        width: 100%;
+        color: #2AC0D7;
+        td.head {
+            background-color: #E6EFF0;
+            padding: 15px 0;
+            font-size: 21px;
+            line-height: 19px;
+            border-bottom: 1px dashed #7AC2CA;
+            border-right: 1px dashed #7AC2CA;
+            strong {
+                font-size: 24px;
+            }
+            &:last-child {
+                border-right: none;
+            }
+            &:first-child {
+                border-bottom: none;
+            }
+        }
+        tr.pricelist {
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+            td {
+                width: 20%;
+                background-color: #CBE7E8;
+                font-size: 24px;
+                border-bottom: 1px dashed #7AC2CA;
+                border-right: 1px dashed #7AC2CA;
+                text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.67);
+                &:last-child {
+                    border-right: none;
+                }
+                &:first-child {
+                    font-size: 21px;
+                    line-height: 19px;
+                    padding: 45px 0;
+                    background-color: #E6EFF0;
+                    strong {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
